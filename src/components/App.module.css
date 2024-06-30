@@ -1,0 +1,31 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1em;
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.heart {
+  color: red;
+  transition: transform 0.2s;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+.teamName {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
