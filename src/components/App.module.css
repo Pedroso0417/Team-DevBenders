@@ -25,7 +25,8 @@ footer {
 }
 
 .teamName {
+  font-weight: bold;
+  color: black;
   cursor: pointer;
-  color: blue;
   text-decoration: underline;
 }

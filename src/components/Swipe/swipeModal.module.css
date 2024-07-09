@@ -1,53 +1,73 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  gap: 10px; /* Adjust the gap between the grid items */
+}
+
 .modal {
-  display: flex;
   position: fixed;
-  z-index: 1;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .modalContent {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  width: 80%;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
   max-width: 600px;
+  width: 100%;
 }
 
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gridItem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0%;
+  padding-bottom: 0, auto;
+  -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.closeButton {
   font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
+  display:flex;
+  background: none;
+  border: none;
+  font-size: 14px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 
-.teamMember {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
+.memberName {
+  gap: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 14px;
+    -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.membeName {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+  
 }
 
-.teamMember img {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-.memberInfo {
-  display: flex;
-  flex-direction: column;
-}
