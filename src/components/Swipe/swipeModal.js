@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './swipeModal.module.css';
 
+
+
 function SwipeModal({ onClose, teamMembers }) {
   return (
     <div className={styles.modal}>
@@ -8,12 +10,13 @@ function SwipeModal({ onClose, teamMembers }) {
         <button className={styles.closeButton} onClick={onClose}>
           Close
         </button>
+        <h1 className={styles.ourTeam}>OUR TEAM</h1>
         <div className={styles.gridContainer}>
           {teamMembers.map(member => (
             <div key={member.id} className={styles.gridItem}>
               <img src={member.imgSrc} alt={member.name} />
               <p className={styles.memberName}>{member.name}</p>
-              <p className={styles.membeName}>{member.role}</p>
+              <p className={styles.memberRole}>{member.role}</p>
             </div>
           ))}
         </div>

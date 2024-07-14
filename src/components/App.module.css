@@ -30,3 +30,30 @@ footer {
   cursor: pointer;
   text-decoration: underline;
 }
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  
+  border-color: red;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: red;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 20px;
+  fill: currentColor;
+  transition: fill 0.3s ease;
+}
+
+.icon:hover {
+  fill: #0073e6; /* Change this to the color you want on hover */
+}
