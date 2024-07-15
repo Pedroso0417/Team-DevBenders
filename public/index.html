@@ -1,74 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Project</title>
+  <link rel="stylesheet" href="App.css"> <!-- Assuming your styles are in App.css -->
+  <link rel="stylesheet" href="swipeModal.module.css"> <!-- Include modal CSS -->
+</head>
+<body>
+  <div class="App">
+    <!-- Other content of your webpage -->
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-
-    <!-- Start Single Page Apps for GitHub Pages -->
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
-      (function (l) {
-        if (l.search[1] === '/') {
-          var decoded = l.search
-            .slice(1)
-            .split('&')
-            .map(function (s) {
-              return s.replace(/~and~/g, '&');
-            })
-            .join('?');
-          window.history.replaceState(
-            null,
-            null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      })(window.location);
-    </script>
-    <!-- End Single Page Apps for GitHub Pages -->
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <footer class="footer">
+      <p class="follow">FOLLOW US</p>
+      <div class="socialIcons">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12 2.2c3.2 0 3.5 0 4.7.1 1.2.1 1.9.2 2.4.4.6.2 1 .4 1.4.8.4.4.6.8.8 1.4.2.5.3 1.2.4 2.4.1 1.2.1 1.5.1 4.7s0 3.5-.1 4.7c-.1 1.2-.2 1.9-.4 2.4-.2.6-.4 1-.8 1.4-.4.4-.8.6-1.4.8-.5.2-1.2.3-2.4.4-1.2.1-1.5.1-4.7.1s-3.5 0-4.7-.1c-1.2-.1-1.9-.2-2.4-.4-.6-.2-1-.4-1.4-.8-.4-.4-.6-.8-.8-1.4-.2-.5-.3-1.2-.4-2.4-.1-1.2-.1-1.5-.1-4.7s0-3.5.1-4.7c.1-1.2.2-1.9.4-2.4.2-.6.4-1 .8-1.4.4-.4.8-.6 1.4-.8.5-.2 1.2-.3 2.4-.4 1.2-.1 1.5-.1 4.7-.1m0-2.2C8.8 0 8.5 0 7.3.1c-1.3.1-2.3.3-3.2.6-.9.3-1.7.7-2.5 1.5C1.2 3 1 4 1 5.3c-.2 1.1-.2 1.4-.2 5.7s0 4.6.1 5.7c.1 1.3.3 2.3.6 3.2.3.9.7 1.7 1.5 2.5.8.8 1.6 1.2 2.5 1.5 1.1.3 1.4.4 5.7.4s4.6 0 5.7-.1c1.3-.1 2.3-.3 3.2-.6.9-.3 1.7-.7 2.5-1.5.8-.8 1.2-1.6 1.5-2.5.3-1.1.4-1.4.4-5.7s0-4.6-.1-5.7c-.1-1.3-.3-2.3-.6-3.2-.3-.9-.7-1.7-1.5-2.5-.8-.8-1.6-1.2-2.5-1.5-1.1-.3-1.4-.4-5.7-.4zm0 5.4c-2.9 0-5.3 2.4-5.3 5.3s2.4 5.3 5.3 5.3 5.3-2.4 5.3-5.3-2.4-5.3-5.3-5.3zm0 8.7c-1.9 0-3.5-1.6-3.5-3.5S10.1 8.4 12 8.4s3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zm6.5-8.7c0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1.6 0 1.1.5 1.1 1.1z" />
+          </svg>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M22.5 0h-21A1.5 1.5 0 000 1.5v21A1.5 1.5 0 001.5 24h10.5v-9h-3v-3.5h3v-2.6c0-3.3 2-5 4.9-5 1.4 0 2.7.1 3 .1v3.5h-2c-1.6 0-2 1.1-2 2.2v2.8h3.6l-.5 3.5H18v9h4.5a1.5 1.5 0 001.5-1.5v-21A1.5 1.5 0 0022.5 0z" />
+          </svg>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M30.753 6.673c-1.155-1.373-3.288-1.933-7.361-1.933h-14.785c-4.166 0-6.335 0.596-7.486 2.058-1.122 1.425-1.122 3.525-1.122 6.432v5.54c0 5.631 1.331 8.49 8.608 8.49h14.785c3.532 0 5.489-0.494 6.755-1.706 1.298-1.243 1.852-3.272 1.852-6.784v-5.54c0-3.065-0.087-5.178-1.247-6.557zM20.544 16.765l-6.714 3.509c-0.139 0.074-0.304 0.118-0.478 0.118-0.57 0-1.032-0.462-1.032-1.032 0 0 0 0 0-0.001v0-6.995c0-0.57 0.462-1.032 1.032-1.032 0.174 0 0.338 0.043 0.481 0.119l-0.006-0.003 6.714 3.486c0.333 0.176 0.557 0.52 0.557 0.916s-0.222 0.739-0.549 0.912l-0.006 0.003z"></path>
+          </svg>
+        </a>
+        <span class="install" onclick="openModal()">INSTALL HERE</span>
+        <div class="socialIcons">
+          <a href="app-store" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M23.667 4c2.393 0 4.333 1.94 4.333 4.333v0 15.333c0 2.393-1.94 4.333-4.333 4.333v0h-15.333c-2.393 0-4.333-1.94-4.333-4.333v0-15.333c0-2.393 1.94-4.333 4.333-4.333v0h15.333zM12.492 20.339h-2.319l-0.089 0.155-0.060 0.121c-0.048 0.113-0.076 0.245-0.076 0.383 0 0.552 0.448 1 1 1 0.318 0 0.602-0.149 0.785-0.381l0.002-0.002 0.076-0.113 0.68-1.163zM17.724 13.365l-1.161 1.989 3.544 6.144 0.075 0.113c0.185 0.239 0.471 0.391 0.793 0.391 0.552 0 1-0.448 1-1 0-0.138-0.028-0.269-0.078-0.388l0.002 0.007-0.060-0.123-0.669-1.16h1.167l0.136-0.008c0.444-0.063 0.792-0.41 0.854-0.849l0.001-0.005 0.009-0.136-0.009-0.136c-0.063-0.444-0.41-0.792-0.849-0.854l-0.005-0.001-0.136-0.009h-2.32l-2.293-3.973zM17.684 9.468c-0.145-0.086-0.319-0.137-0.505-0.137-0.319 0-0.603 0.149-0.786 0.381l-0.002 0.002-0.076 0.113-0.32 0.545-0.312-0.541-0.075-0.112c-0.185-0.237-0.47-0.389-0.791-0.389-0.131 0-0.256 0.025-0.371 0.071l0.007-0.002-0.135 0.067-0.113 0.075c-0.237 0.185-0.388 0.47-0.388 0.791 0 0.132 0.025 0.257 0.072 0.372l-0.002-0.007 0.067 0.133 0.883 1.531-2.908 4.979h-2.259l-0.136 0.009c-0.491 0.069-0.864 0.486-0.864 0.991s0.373 0.921 0.858 0.99l0.005 0.001 0.136 0.009h8.036l-1.153-2-2.308-0.001 3.8-6.503 0.060-0.12c0.048-0.113 0.077-0.245 0.077-0.384 0-0.367-0.198-0.688-0.492-0.862l-0.005-0.003z"></path>
+            </svg>
+          </a>
+          <a href="google-play" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M17 14.5l4.2-4.5-16.3-8.8c-0.1-0.1-0.3-0.1-0.6-0.2l12.7 13.5zM23 21l5.9-3.2c0.7-0.4 1.1-1 1.1-1.8s-0.4-1.5-1.1-1.8l-5.9-3.2-4.7 5 4.7 5zM2.4 1.9c-0.3 0.3-0.4 0.7-0.4 1.1v26c0 0.4 0.1 0.8 0.4 1.2l13.2-14.2-13.2-14.1zM17 17.5l-12.7 13.5c0.2 0 0.4-0.1 0.6-0.2l16.3-8.8-4.2-4.5z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p>
+          Developed with <span className={styles.heart}>&hearts;</span> by the{' '}
+          <span className={styles.teamName} onClick={handleModalOpen}>
+            Team-DevBenders @ 2024
+          </span>{' '}
+          | All Rights Reserved
+        </p>
+    </footer>
+  </div>
+  <!-- Modal structure -->
+  <script>
+    // Team members data
+  </script>
+  <script src="path-to-your-script.js"></script> <!-- Assuming you have additional JavaScript -->
+</body>
 </html>
