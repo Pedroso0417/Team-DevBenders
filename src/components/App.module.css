@@ -45,8 +45,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  color: red;
+  border-radius: 100%;
+  color: orange;
   width: 30px;
   height: 30px;
   padding-bottom: 20px;
@@ -55,5 +55,21 @@ footer {
 }
 
 .icon:hover {
-  fill: #0073e6; /* Change this to the color you want on hover */
+  fill: #0073e6;
+}
+
+.follow{
+  align-items: center;
+  justify-content: center;
+  margin-right: 350px;
+  
+  
+}
+.install{
+  margin-bottom: 50px ;
+  
+}
+.socialIcons{
+  display: flex;
+ 
 }
