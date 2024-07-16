@@ -1,3 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import React from 'react';
 // import styles from './swipeModal.module.css';
 

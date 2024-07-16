@@ -1,10 +1,84 @@
 // import React, { useState } from 'react';
+
+// import App from './App';
+
+// function Modal() {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   const openModal = () => setIsOpen(true);
+//   const closeModal = () => setIsOpen(false);
+
+//   return (
+//     <div>
+//       <button onClick={openModal}>Open Modal</button>
+//       {isOpen && (
+//         <div id="swipeModal" className="modal">
+//           <div className="modal-content">
+//             <span className="close" onClick={closeModal}>
+//               &times;
+//             </span>
+//             <img
+//               src="../components/devPhoto/images/image-1.png"
+//               alt="Swipe 1"
+//             />
+//             <img
+//               src="../components/devPhoto/images/image-2.jpeg"
+//               alt="Swipe 2"
+//             />
+//             <img
+//               src="../components/devPhoto/images/image-3.jpeg"
+//               alt="Swipe 3"
+//             />
+//             <img
+//               src="../components/devPhoto/images/image-4.png"
+//               alt="Swipe 4"
+//             />
+//             <img
+//               src="../components/devPhoto/images/image-5.png"
+//               alt="Swipe 5"
+//             />
+//             <img
+//               src="../components/devPhoto/images/image-6.jpeg"
+//               alt="Swipe 6"
+//             />
+//             <img
+//               src="../components/devPhoto/images/image-7.jpeg"
+//               alt="Swipe 7"
+//             />
+//             <img
+//               src="../components/devPhoto/images/image-8.png"
+//               alt="Swipe 8"
+//             />
+//             <img src="../components/devPhoto/images/image-9.png" alt="Swipe 9" />
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+// export {App};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react';
 // import styles from './App.module.css';
 // import SwipeModal from './Swipe/swipeModal'; // Ensure this path is correct
 
-// // import { ReactComponent as InstagramIcon } from '../icons/icons.instagram.svg';
-// // import { ReactComponent as FacebookIcon } from '../icons/icons.facebook.svg';
-// // import { ReactComponent as YouTubeIcon } from '../icons/icons.youtube.svg';
+
 // // Importing images
 // import image1 from '../components/devPhoto/images/image-1.png';
 // import image2 from '../components/devPhoto/images/image-2.jpeg';
